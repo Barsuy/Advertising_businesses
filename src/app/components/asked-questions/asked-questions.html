@@ -1,0 +1,34 @@
+<div class="faq-container">
+
+    <div class="faq-header">
+        <h2>שאלות נפוצות</h2>
+        <p>כל מה שצריך לדעת על מערכות ההולוגרמה שלנו</p>
+    </div>
+
+    <div class="faq-list">
+
+        @for (faq of faqs; track i; let i = $index) {
+
+        <div class="faq-item" (click)="toggleFaq(i)">
+
+            <div class="faq-question">
+                <span>{{ faq.question }}</span>
+                <span class="icon">{{ faq.open ? '−' : '+' }}</span>
+            </div>
+
+            <div class="faq-answer" [class.open]="faq.open">
+                <p>{{ faq.answer }}</p>
+            </div>
+
+        </div>
+
+        }
+
+    </div>
+
+    <div class="faq-cta">
+        <h3>עדיין יש לך שאלות?</h3>
+        <button>דבר איתנו עכשיו</button>
+    </div>
+
+</div>

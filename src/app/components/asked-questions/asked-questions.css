@@ -1,0 +1,116 @@
+.faq-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  direction: rtl;
+  font-family: Arial, sans-serif;
+
+  /* רקע כללי */
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  border-radius: 20px;
+  color: white;
+}
+
+/* כותרת */
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.faq-header p {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+/* רשימה */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* כל פריט */
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+/* שאלה */
+.faq-question {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.icon {
+  font-size: 22px;
+  color: #38bdf8;
+}
+
+/* תשובה */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  padding: 0 20px;
+  color: #cbd5e1;
+}
+
+.faq-answer p {
+  margin: 14px 0;
+  line-height: 1.6;
+}
+
+/* פתוח */
+.faq-answer.open {
+  max-height: 300px;
+  padding: 0 20px 16px;
+}
+
+/* CTA */
+.faq-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.faq-cta h3 {
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+.faq-cta button {
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.faq-cta button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}

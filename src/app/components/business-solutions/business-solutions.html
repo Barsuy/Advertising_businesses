@@ -1,0 +1,29 @@
+<div class="solutions-container">
+
+    <div class="header">
+        <h1>פתרונות לעסקים</h1>
+        <p>טכנולוגיית הולוגרמה שמביאה לקוחות, תשומת לב ותוצאות</p>
+    </div>
+
+    <div class="grid">
+
+        @for (item of solutions; track i; let i = $index) {
+        <div class="card">
+
+            <div class="icon">✦</div>
+
+            <h3>{{ item.title }}</h3>
+
+            <p>{{ item.text }}</p>
+
+        </div>
+        }
+
+    </div>
+
+    <div class="cta">
+        <h2>רוצה פתרון מותאם לעסק שלך?</h2>
+        <button>דבר איתנו עכשיו</button>
+    </div>
+
+</div>

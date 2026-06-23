@@ -1,0 +1,30 @@
+<div class="advantages-container">
+
+    <div class="header">
+        <h1>למה לבחור בהולוגרמה?</h1>
+        <p>חוויה שמייצרת אפקט וואו ומבדלת אותך מכל המתחרים</p>
+    </div>
+
+    <div class="grid">
+
+        @for (item of advantages; track i; let i = $index) {
+
+        <div class="card">
+
+            <div class="icon">✦</div>
+
+            <h3>{{ item.title }}</h3>
+
+            <p>{{ item.text }}</p>
+
+        </div>
+        }
+
+    </div>
+
+    <div class="cta">
+        <h2>רוצה להפוך את האירוע שלך לבלתי נשכח?</h2>
+        <button>דבר איתנו עכשיו</button>
+    </div>
+
+</div>

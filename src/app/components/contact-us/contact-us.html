@@ -1,0 +1,43 @@
+<div class="contact-container">
+
+  <div class="header">
+    <h1>צור קשר</h1>
+    <p>רוצה לשדרג את האירוע שלך עם הולוגרמה? השאר פרטים ונחזור אליך</p>
+  </div>
+
+  <div class="content">
+
+    <!-- FORM -->
+    <div class="form-box">
+
+      <input type="text" placeholder="שם מלא" [(ngModel)]="form.name">
+
+      <input type="text" placeholder="טלפון" [(ngModel)]="form.phone">
+
+      <input type="email" placeholder="אימייל" [(ngModel)]="form.email">
+
+      <textarea placeholder="איך נוכל לעזור?" [(ngModel)]="form.message"></textarea>
+
+      <button (click)="submitForm()">שלח הודעה</button>
+
+    </div>
+
+    <!-- INFO -->
+    <div class="info-box">
+
+      <h3>אנחנו כאן בשבילך</h3>
+
+      <p>✔ מענה מהיר</p>
+      <p>✔ התאמה אישית לאירוע</p>
+      <p>✔ הצעת מחיר תוך זמן קצר</p>
+
+      <div class="contact-details">
+        <p>📞 טלפון: 050-0000000</p>
+        <p>📧 אימייל: info@yourcompany.com</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
